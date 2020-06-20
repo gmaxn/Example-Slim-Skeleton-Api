@@ -1,0 +1,11 @@
+{
+    "name": "mguelpa/example-slim-skeleton-api",
+    "description": "This example demonstrates how to build  basic slim-skeleton api.",
+    "authors": [
+        {
+            "name": "mguelpa",
+            "email": "mguelpa@gmail.com"
+        }
+    ],
+    "require": {}
+}
