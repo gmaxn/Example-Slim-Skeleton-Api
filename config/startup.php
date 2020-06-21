@@ -1,6 +1,7 @@
 <?php 
 require __DIR__ . '/../vendor/autoload.php';
 
+use Config\DbContext;
 use Slim\Factory\AppFactory;
 
 
@@ -11,6 +12,8 @@ $app->setBasePath('/Example-Slim-Skeleton-Api/public');
 $routes = require __DIR__ . '/routes.php';
 $routes($app);
 
+// Initialize DbContext
+$dbContext = new DbContext();
 
 
 return $app;

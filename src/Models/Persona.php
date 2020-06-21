@@ -1,10 +1,5 @@
 <?php
 namespace App\Models;
 
-class Persona {
-
-    public static function greet($name) {
-        echo "Hello " . $name . "!";
-    }
-
-}
+class Persona extends \Illuminate\Database\Eloquent\Model 
+{ }

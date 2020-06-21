@@ -10,5 +10,4 @@ return function ($app) {
         $group->get('[/]', PersonaController::class . ':getAll');
 
     });
-
 };
