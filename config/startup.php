@@ -12,7 +12,9 @@ $app->setBasePath('/Example-Slim-Skeleton-Api/public');
 $routes = require __DIR__ . '/routes.php';
 $routes($app);
 
-$app->addErrorMiddleware(true, true, true);
+// Add Middlewares
+$middlewares = require __DIR__ . '/middlewares.php';
+$middlewares($app);
 
 // Initialize DbContext
 $dbContext = new DbContext();
